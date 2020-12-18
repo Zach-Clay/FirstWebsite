@@ -1,3 +1,8 @@
+*
+{
+    box-sizing: border-box;
+}
+
 body
 {
     font-family: Monospace, Arial, Helvetica, sans-serif;
@@ -5,7 +10,7 @@ body
     line-height: 1.5;
     padding: 0;
     margin: 0;
-    background-color: #fff9f9;
+    background-color: #f8f8f8;
 }
 
 /* Global */
@@ -24,7 +29,7 @@ header
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    border-bottom: black 10px solid;
+    border-bottom: rgb(73, 94, 126) 10px solid;
     overflow: hidden;
 }
 
@@ -54,13 +59,12 @@ header
 .hero h1
 {
     color: white;
-    text-shadow: 3px 3px gray;
+    text-shadow: 3px 3px rgb(73, 94, 126);
     text-transform: uppercase;
     text-align: center;
     font-size: 65px;
     margin-top: 25px;
 }
-/* Header End */
 
 .center
 {
@@ -71,47 +75,159 @@ header
 }
 
 /* about */
-.aboutimg h1
+.abouth1 h1
 {
     font-size: 50px;
     text-align: center;
     font-family: monospace;
     float: top;
     text-transform: uppercase;
-    text-shadow: 2px 2px gray;
+    text-shadow: 2.5px 2.5px rgb(73, 94, 126);
 }
 
-.abouttxt
+.aboutimg
 {
-    width: 100%;
-    align-items: center;
+    display: flex;
 }
 
-.abouttxt p
+.column1
 {
-    margin-left: 90px;
-    margin-right: 90px;
-    margin-top: 20px;
-    color: black;
-    font-family: arial;
-    font-size: 96%;
-    text-align: center;
-    border: rgb(95, 91, 91) 1.5px solid;
-    background-color: rgb(245, 238, 238);
-    
+    float: left;
+    width: 27%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.column2
+{
+    float: right;
+    width: 50%;
+}
+
+.aboutimg img
+{
+    border-radius: 2%;
+}
+
+.aboutimg span
+{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0%;
+    font-size: 15.7px;
+}
+
+.aboutimg:after
+{
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* resume */
-.resumeimg h1
+.resume
+{
+    margin-top: 5%;
+    border-top: rgb(73, 94, 126) 10px solid;
+    background-color:#ffffff;
+}
+
+h2
+{
+    margin-top: 2.5%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.resume1 h1
 {
     font-size: 50px;
     text-align: center;
     font-family: monospace;
     float: top;
     text-transform: uppercase;
-    text-shadow: 2px 2px gray; 
+    text-shadow: 2.5px 2.5px rgb(73, 94, 126); 
 }
 
+.resume1 p
+{
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 2.5%
+}
+
+.resume1 a:link, a:visited
+{
+    background-color: rgb(73, 94, 126);
+    color: white;
+    text-shadow: 1.5px 1.5px gray;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.resume1 a:hover
+{
+    background-color: rgb(78, 79, 80);
+}
+
+.resume p
+{
+    font-family: Courier;
+    font-size: 14px;
+}
+
+.column
+{
+    float: right;
+    width: 50%;
+}
+
+.resume2
+{
+    margin-right: 10%;
+}
+
+.resume2 img
+{
+    width: 20%;
+    margin-left: 27%;
+    border-radius: 5%;
+    margin-top: 0%;
+}
+
+.resume2::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.resume3
+{
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.resume3 img
+{
+    width: 17%;
+    margin-left: 27%;
+    border-radius: 5%;
+}
+
+.resume3 span
+{
+    font-size: 16px;
+    line-height: 1px;
+}
+
+.resume3::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
 
 /* links */
 .linkstxt h1
@@ -121,13 +237,14 @@ header
     font-family: monospace;
     float: top;
     text-transform: uppercase;
-    text-shadow: 2px 2px gray;
+    text-shadow: 2.5px 2.5px rgb(73, 94, 126);
 }
 
 .linkstxt
 {
-    margin:auto;
+    border-top: rgb(73, 94, 126) 10px solid;    
     overflow: hidden;
+    margin-bottom: 0%;
 }
 
 .linkstxt img
@@ -135,33 +252,34 @@ header
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     width: 40%;
 }
 
 /* contact */
+
 .email h1
 {
     font-size: 50px;
     text-align: center;
     font-family: monospace;
-    float: top;
     text-transform: uppercase;
-    text-shadow: 2px 2px gray;
+    text-shadow: 2.5px 2.5px rgb(73, 94, 126);
+    margin-bottom: 0%;
 }
 .email p
 {
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 2.5%;
 }
 
 /* footer */
 footer
 {
-    background-color: rgb(77, 77, 77);
-    border-top:black 10px solid;
+    background-color: rgb(73, 94, 126);
+    border-top:black 3px solid;
     color: white;
     overflow: hidden;
 }
