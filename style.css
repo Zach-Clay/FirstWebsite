@@ -402,6 +402,8 @@ h2
 /* footer */
 footer
 {
-    color: black;
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
     overflow: hidden;
 }
