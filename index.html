@@ -1,211 +1,409 @@
-<!DOCTYPE html>
+*
+{
+    box-sizing: border-box;
+}
 
-<html>
+body
+{
+    font-family: Monospace, Arial, Helvetica, sans-serif;
+    font-size: 15;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f8f8;
+}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Zachary Clay's Website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Zachary Clay">
-    <meta name="keywords" content="Zachary Clay, Zach Clay">
-    <link rel="icon" type="image/png" href="./img/Logo2.png">
-    <title>Zachary Clay</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+/* Global */
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
 
-<body>
+/* Header */
+header
+{
+    background-image: linear-gradient(rgba(29, 26, 26, 0.5),rgba(39, 37, 37, 0.5)), url(./img/Background.jpg);
+    /*height: 100vh;*/
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-bottom: 0%;
+}
 
-    <header>
-        <div class="logo">
-            <img src="./img/Logo2.png">
-        </div>
+.logo
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    float: left;
+    margin-left: 30px;
+}
 
-        <div class="hero">
-            <h1>Zachary Clay</h1>
-        </div>
-    </header>
+.logo img
+{
+    width: 12%;
+    height: auto;
+}
 
-    <section id="about">
-    <div class="about">
-        <div class="abouth1">
-            <h1>About Me</h1>
-        </div>
-        <div class="aboutimg">
-            <div class="column1">
-                <img src="img/Family.JPG"  style="max-width:100%;height:auto">
-                <img src="img/Guitar.JPEG" style="max-width:100%;height:auto">
-            </div>
-            <div class="column2">
-                <span>Hi! My name is Zach Clay. I’m 19 years old and I’m from Savannah, GA. I’m currently 
-                    studying at Clemson University’s College of Engineering, Computing, and Applied 
-                    Sciences. I am working towards a degree in Computer Information Systems. To tell 
-                    you a little bit about myself, here are some of the things I enjoy and am passionate 
-                    about: First, I love serving the Lord. I was saved by the grace of God at a young age
-                    of 7 years old. Although my walk with Christ hasn’t been perfect, I strive everyday 
-                    to go deeper in my relationship with the Lord and glorify Him through my actions. I 
-                    love spreading the gospel to people I come in contact with and seek to disciple 
-                    others into a relationship with Christ. One way that I do this is through serving 
-                    on Clemson FCA’s worship team. At Clemson, we have one of the largest FCA ministries 
-                    in the country. I have the amazing opportunity to serve weekly as a guitarist in 
-                    order to further His kingdom. It is always the highlight of my week. I am also a 
-                    brother in Clemson BYX (Brothers Under Christ), a fraternity on Clemson’s campus where I lead a small group. 
-                    We meet weekly to fellowship and strengthen each other’s faith. I enjoy critical 
-                    thinking and using my knowledge of coding and programming to solve problems. I 
-                    constantly look forward to learning more and becoming a better computer scientist. 
-                    Some of my other hobbies include hanging out with friends, spending time with family,
-                    playing sports, snowboarding, and hiking.</span>
-            </div>
-        </div>     
-    </div>
-    </section>
+.hero
+{
+    overflow: hidden;
+    font-family: monospace;
+    position: absolute;
+    width: 100%;
+}
 
-    <section id="resume">
-    <div class="resume">
-        <div class="resume1">
-            <h1>My Resume</h1>
-            <p style="font-size:18px; font-style:arial">To download my resume in .docx form, click here:&nbsp;<a href="Resume.docx">Resume.docx</a></p>
-        </div>
-        <h2>-Education-</h2>
-        <div class="resume2">
-            <img src="img/Clemson.jpg" style="max-width:100%;height:auto">
-            <div class="column">
-                <span style="color:blue;font-size:15px">Clemson University Class of 2023</span>
-                <br>
-                <span><b>Clemson, SC</b></span>
-                <br>
-                <p>I am currently a student at Clemson University. I began in Fall of 2019 and am on
-                    track to graduate in May of 2023 with a degree in B.S. Computer Information Systems.
-                    My current GPA is a 3.90. I Achieved the President’s List (4.0 GPA) ⅔ semesters and
-                    achieved the Dean’s list (3.5 or higher GPA) for the remaining semester.
-                </p>
-                <p>I look forward to learning more about computer science and gaining necessary skills that will help me succeed at
-                     any job.</p>
-                </p>
-                <br>
-                <p></p>
-            </div>
-        </div>
-        <div class="resume3">
-            <img src="img/Calvary.png" style="max-width:45%;height:auto">
-            <div class="column">
-                <span style="color:blue;font-size:15px">Calvary Day School Class of 2019</span>
-                <br>
-                <span><b>Savannah, GA</b></span>
-                <br>
-                <p>I graduated from Calvary Day School in May of 2019. My academic achievements in High School are as follows:</p>
-                <p>High Honors Graduate (>95 Average, 9-12)<br>GPA: 3.95, Class Rank 9 out of 86<br>National Honor Society (11-12)
-                    <br>HOBY Oustanding Leadership Award<br>Selected as Junior Marshall for being top 15 in class
-                    <br><i>Rigor Course Work:</i> <br> &nbsp;&nbsp;6 AP Courses<br>&nbsp;&nbsp;7 Honors Courses
-                    <br>&nbsp;&nbsp;3 Dual Enrollment Courses with Truett McConnel University by time &nbsp;&nbsp;of graduation.</p>
-            </div>
-        </div>
+.hero h1
+{
+    color: white;
+    text-shadow: 3px 3px rgb(73, 94, 126);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 65px;
+    margin-top: 25px;
+}
 
-        <h2>-Extra-Curricular Activities-</h2>
-        <div class="resume4">
-            <img src="img/FCA.jpg" style="max-width:25%;height:auto">
-            <div class="column">
-                <img src="img/BYX.png" style="max-width:50%;height:auto">
-            </div>
-        </div>
-        <div class="resume4-1">
-            <ul>
-                <p>Clemson FCA (2020-current)</p>
-                    <li style="margin-left: 3em; padding:0">One of Clemson’s on-campus ministries and one of the largest FCA gatherings 
-                        in the country</li>
-                    <li style="margin-left: 3em; padding:0">I serve weekly as a guitarist on the worship team</li>
-                <p>Clemson BYX (Brothers Under Christ, 2020-current)</p>
-                    <li style="margin-left: 3em">Christian Fraternity on Clemson’s campus</li>
-                    <li style="margin-left: 3em; padding:0">I serve as a small group leader</li>
-                <p>Calvary Day School Baseball Team (2015-2019)</p>
-                <p>National Honor Society (2017-2019)</p>
-                    <li style="margin-left: 3em">Member of the National Honor Society Service Committee</li>
-                    <li style="margin-left: 3em; padding:0">Attend monthly meetings where service opportunities are planned and executed</li>
-                <p>Student Ambassador for Calvary Day School (2016-2019)</p>
-                    <li style="margin-left: 3em">Helped incoming and transfer students acclimate to their new school</li>
-                    <li style="margin-left: 3em">Led new student orientations and Open Houses for parents</li>
-            </ul>
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
-        </div>
+/* about */
+.about
+{
 
-        <h2>-Employment-</h2>
-            <div class="resume5">
-                <ul>
-                    <p>Instacart Full Service Shopper (2020)</p>
-                        <li style="margin-left: 3em; padding:0">Fulfilled online grocery orders during COVID-19 pandemic to help keep 
-                            higher risk groups at home</li>
-                    <p>	Savannah Bananas (2017-2019)</p>
-                        <li style="margin-left: 3em">Focused on customer service skills</li>
-                        <li style="margin-left: 3em; padding:0">Game Day Staff Team Member</li>
-                        <li style="margin-left: 3em; padding:0">Worked as waiter, cashier, food runner and food bagger</li>
-                    <p>	Maintenance Apprentice, Abbeville County High School, SC (2017)</p>
-                        <li style="margin-left: 3em">Learned Facilities Management duties during apprenticeship</li>
-                        <li style="margin-left: 3em">Assisted in maintenance of electrical and HVAC systems</li>
-                    <p>Pooler Recreation Department (2016)</p>
-                        <li style="margin-left: 3em">Prepared and serviced baseball fields during tournaments</li>
-                    <p>Forrest City Gun Club (2016)</p>
-                        <li style="margin-left: 3em">Performed trapping and cleanup at a shooting tournament</li>
-                </ul>
-            </div>
-        <h2>-Community Service-</h2>
-            <div class="resume6">
-                <ul>
-                    <p>Army ROTC Service Project (2020)</p>
-                    <li style="margin-left: 3em; padding:0">Helped coordinate a service project on Twelve Mile Recreation’s land</li>
-                    <li style="margin-left: 3em; padding:0">Performed cleaning and trash pickup to the public areas</li>
-                    <p>	Student of the Year Candidate for the Leukemia and Lymphoma Society (2018)</p>
-                        <li style="margin-left: 3em; padding:0">Selected by High School Principal and Headmaster to 
-                        represent Calvary Day School</li>
-                        <li style="margin-left: 3em">Led campaign team, coordinated fundraising events and secured corporate and 
-                            personal sponsorships</li>
-                        <li style="margin-left: 3em">Raised a total of $15,000 in three months, surpassing initial goal of $10,000</li>
-                    <p>Fresh Air Home, Tybee Island, GA (2015-2016)</p>
-                        <li style="margin-left: 3em">Performed maintenance and landscape work at the camp facilities</li>
-                        <li style="margin-left: 3em; padding:0">Painted interior rooms and furniture for incoming camp children</li>
-                        <li style="margin-left: 3em; padding:0">Served pancake breakfast for 50 people in fundraising effort to 
-                            benefit The Fresh Air Home</li>
-                    <p>Backpacks for Appalachia (2016, 2018)</p>
-                        <li style="margin-left: 3em">Donated money and purchased school supplies for struggling Appalachia area children</li>
-                    <p>Operation Christmas Child (2015, 2017)</p>
-                        <li style="margin-left: 3em">Packed Christmas boxes and presents for underprivileged children</li>
-                    <p>Second Harvest Food Bank (2015)</p>
-                        <li style="margin-left: 3em">Sorted food and packed 200+ bags of food for Savannah-area families</li>
-                </ul>
-            </div>
-    </div>
-    </section>
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 3%;
+    padding-top: 0.1%;
+}
 
-    <section id="links">
-        <div class="linkstxt">
-            <h1>Links</h1>
-            <div class="linksrow">
-                <div class="linkscolumn">
-                    <a href="https://www.instagram.com/zach__clay/" target="_blank">
-                        <img src="img/Instagram.png" alt="instagram" style="width:80px;;height:auto">
-                    </a>
-                </div>
-                <div class="linkscolumn">
-                    <a href="https://www.facebook.com/zach.clay.927" target="_blank">
-                        <img src="img/Facebook.png" alt="facebook" style="width:87px;height:auto">
-                    </a>
-                </div>
-                <div class="linkscolumn">                   
-                    <a href="https://github.com/Zach-Clay" target="_blank">
-                        <img src="img/Github.png" alt="github" style="width:100px;height:auto">
-                    </a>
-                </div>
-            </div>
-            <div class = "email">
-                <h1>Contact</h1>
-                <p>To reach me, my email is&nbsp;<b><u>zachclayc130@gmail.com</u></b></p>
-            </div>
-        </div>
+.abouth1 h1
+{
+    font-size: 50px;
+    text-align: center;
+    font-family: monospace;
+    float: top;
+    text-transform: uppercase;
+}
 
-    </section>
+.aboutimg
+{
+    display: flex;
+}
 
-    <footer>
-        <p>&nbsp;&copy; 2021 | Zachary Clay</p>
-    </footer>
+.column1
+{
+    float: left;
+    width: 27%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
 
-</body>
+.column2
+{
+    float: right;
+    width: 50%;
+}
 
-</html>
+.aboutimg img
+{
+    border-radius: 2%;
+}
+
+.aboutimg span
+{
+    font-family: serif;
+    margin-top: 0%;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.aboutimg:after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* resume */
+.resume
+{
+    background-image: linear-gradient(rgba(241, 231, 231, 0.5),rgba(235, 228, 228, 0.5)), url(./img/Background3.jpg);
+    min-height: 100vh;
+    background-size:cover;
+    background-position: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0.1%;
+    padding-top: 0.1%;
+}
+
+h2
+{
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.resume1 h1
+{
+    font-size: 50px;
+    text-align: center;
+    font-family: monospace;
+    float: top;
+    text-transform: uppercase;
+}
+
+.resume1 p
+{
+    font-style: arial;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 2.5%
+}
+
+.resume1 a:link, a:visited
+{
+    background-color: rgb(73, 94, 126);
+    color: white;
+    text-shadow: 1.5px 1.5px gray;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.resume1 a:hover
+{
+    background-color: rgb(78, 79, 80);
+}
+
+.resume p
+{
+    font-family: Courier;
+    font-size: 14px;
+}
+
+.column
+{
+    float: right;
+    width: 50%;
+}
+
+.resume2
+{
+    margin-right: 10%;
+}
+
+.resume2 img
+{
+    width: 20%;
+    margin-left: 27%;
+    border-radius: 5%;
+    margin-top: 0%;
+}
+
+.resume2::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.resume3
+{
+    margin-top: 0%;
+    margin-right: 10%;
+}
+
+.resume3 img
+{
+    width: 16%;
+    margin-left: 27%;
+    border-radius: 5%;
+}
+
+.resume3 span
+{
+    font-size: 16px;
+    line-height: 1px;
+}
+
+.resume3::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.resume4
+{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.resume4 img
+{
+    border-radius: 5%;
+    margin-left: 15%;
+}
+
+.resume4::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.resume4-1
+{
+    display: flex;
+    align-items: left;
+    width: 50%;
+    margin-left: 28%;
+}
+
+.resume4-1 p
+{
+    font-family: serif;
+    font-size: 16.5px;
+    margin: 1px;
+}
+
+.resume4-1 ul
+{
+    padding: 0%;
+    font-family: Courier;
+    font-size: 15px;
+}
+
+.resume4-1::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.resume5
+{
+    display: flex;
+    align-items: left;
+    width: 50%;
+    margin-left: 28%;
+}
+
+.resume5 p
+{
+    font-family: serif;
+    font-size: 16.5px;
+    margin: 1px;
+}
+
+.resume5 ul
+{
+    padding: 0%;
+    font-family: Courier;
+    font-size: 15px;
+}
+
+.resume5::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.resume6
+{
+    display: flex;
+    align-items: left;
+    width: 50%;
+    margin-left: 28%;
+    margin-bottom: 3%;
+}
+
+.resume6 p
+{
+    font-family: serif;
+    font-size: 16.5px;
+    margin: 1px;
+}
+
+.resume6 ul
+{
+    padding: 0%;
+    font-family: Courier;
+    font-size: 15px;
+}
+
+.resume6::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* links */
+.linkstxt h1
+{
+    font-size: 50px;
+    text-align: center;
+    font-family: monospace;
+    float: top;
+    text-transform: uppercase;
+    color: white;
+}
+
+.linkstxt
+{
+    background-image: linear-gradient(rgba(29, 26, 26, 0.5),rgba(39, 37, 37, 0.5)), url(./img/Background2.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;    
+    overflow: hidden;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.linkstxt img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    width: 40%;
+}
+
+/* contact */
+.email h1
+{
+    font-size: 50px;
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 0%;
+}
+.email p
+{
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+
+/* footer */
+footer
+{
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
