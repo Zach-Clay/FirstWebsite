@@ -5,4 +5,4 @@ My personal website using HTML and CSS
 This is my first website I have made, so it will probably be very simple. I decided to make this during my winter break from college. I haven't been taught how to use HTML or CSS in any of my classes yet so it may not be the best but hey, I'm learning.
 This will be a work in progress. I want to this website to contain my resume, bio, everything so I can show my creativity and ability when applying for jobs/internships.
 
-THIS IS DATED. I WILL BE MAKING A NEW PORTFOLIO WEBSITE SOON
+THIS IS DATED. I NOW HAVE A NEW PORTFOLIO WEBSITE
